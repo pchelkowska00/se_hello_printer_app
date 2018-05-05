@@ -13,8 +13,3 @@ script:
   - sleep 2; python test-api/test_api.py
 after success:
   - make docker_push
-
-deploy:
-  provider: heroku
-  app: ancient-sea-62343
-  api_key: ${HEROKU_API_KEY}
